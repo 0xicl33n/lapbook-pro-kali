@@ -1,0 +1,65 @@
+ aplay -L
+null
+    Discard all samples (playback) or generate zero samples (capture)
+default
+    Playback/recording through the PulseAudio sound server
+lavrate
+    Rate Converter Plugin Using Libav/FFmpeg Library
+samplerate
+    Rate Converter Plugin Using Samplerate Library
+speexrate
+    Rate Converter Plugin Using Speex Resampler
+jack
+    JACK Audio Connection Kit
+oss
+    Open Sound System
+pulse
+    PulseAudio Sound Server
+speex
+    Plugin using Speex DSP (resample, agc, denoise, echo, dereverb)
+upmix
+    Plugin for channel upmix (4,6,8)
+vdownmix
+    Plugin for channel downmix (stereo) with a simple spacialization
+hw:CARD=sofessx8336,DEV=0
+    sof-essx8336,
+    Direct hardware device without any conversions
+hw:CARD=sofessx8336,DEV=5
+    sof-essx8336,
+    Direct hardware device without any conversions
+hw:CARD=sofessx8336,DEV=6
+    sof-essx8336,
+    Direct hardware device without any conversions
+hw:CARD=sofessx8336,DEV=7
+    sof-essx8336,
+    Direct hardware device without any conversions
+plughw:CARD=sofessx8336,DEV=0
+    sof-essx8336,
+    Hardware device with all software conversions
+plughw:CARD=sofessx8336,DEV=5
+    sof-essx8336,
+    Hardware device with all software conversions
+plughw:CARD=sofessx8336,DEV=6
+    sof-essx8336,
+    Hardware device with all software conversions
+plughw:CARD=sofessx8336,DEV=7
+    sof-essx8336,
+    Hardware device with all software conversions
+sysdefault:CARD=sofessx8336
+    sof-essx8336,
+    Default Audio Device
+dmix:CARD=sofessx8336,DEV=0
+    sof-essx8336,
+    Direct sample mixing device
+dmix:CARD=sofessx8336,DEV=5
+    sof-essx8336,
+    Direct sample mixing device
+dmix:CARD=sofessx8336,DEV=6
+    sof-essx8336,
+    Direct sample mixing device
+dmix:CARD=sofessx8336,DEV=7
+    sof-essx8336,
+    Direct sample mixing device
+usbstream:CARD=sofessx8336
+    sof-essx8336
+    USB Stream Output

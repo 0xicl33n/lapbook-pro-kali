@@ -30,3 +30,11 @@ The mouse nib itself is an `HTIX5288` which is known to have problems as of kern
 
 ## Whats the Kernel?
 wip
+
+## Audio 
+- Ensure `alsamixer``, `aplay`` and `firmware-sof-signed`` are installed. 
+- Mess arounc with pulse settings (in xfce or something). Make sure theyre all up and not muted
+- Terminal > `echo "options snd_soc_sof_es8336 quirk=0x02" >> /etc/modprobe.d/alsa-base.conf`
+- Reboot
+- Run `alsamixer -c 0`
+- Mess with the sliders until you hear audio. Mostly the `Speakers` slider
