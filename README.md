@@ -32,7 +32,7 @@ The mouse nib itself is an `HTIX5288` which is known to have problems as of kern
 At the time of this writing it is kernel 3.6.0 with an attempt at better framebuffer support to fix GRUB see: https://docs.kernel.org/fb/fbcon.html
 
 ## Audio 
-- Ensure `alsamixer``, `aplay`` and `firmware-sof-signed`` are installed. 
+- Ensure `alsamixer`, `aplay` and `firmware-sof-signed` are installed. 
 - Mess arounc with pulse settings (in xfce or something). Make sure theyre all up and not muted
 - Terminal > `echo "options snd_soc_sof_es8336 quirk=0x02" >> /etc/modprobe.d/alsa-base.conf`
 - Reboot
