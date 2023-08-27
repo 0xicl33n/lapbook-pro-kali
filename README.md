@@ -5,7 +5,7 @@ This is a collection of files / scripts for helping users with their generic 7 i
 
 | Working?      |     | Notes                                                    |
 | ------------- |:---:| --------------------------------------------------------:|
-| Audio         | ❌   |                                                          |
+| Audio         | ✅   |                                                          |
 | Touchscreen   | ❌   | Not even detected                                        |
 | Mouse         | 🚧  | Still not satisfied with the remapping                   |
 | GRUB portrait | 🚧  | GRUB option `fbcon` ignored for menu but the rest is not |
