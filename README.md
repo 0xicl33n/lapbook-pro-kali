@@ -29,4 +29,4 @@ The keycode for `MENU` is  `117` and `xmodmap` key `0xFF67`.
 The mouse nib itself is an `HTIX5288` which is known to have problems as of kernel 5.4.
 
 ## Whats the Kernel?
-wip
+At the time of this writing it is kernel 3.6.0 with an attempt at better framebuffer support to fix GRUB see: https://docs.kernel.org/fb/fbcon.html
