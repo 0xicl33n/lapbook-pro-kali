@@ -3,13 +3,13 @@ This is a collection of files / scripts for helping users with their generic 7 i
 
 ## Issues
 
-| Working?          |  |
-| ----------------- |  |
-| Audio             |❌| 
-| Touchscreen       |❌|
-| Mouse             |🚧|
-| GRUB portrait     |🚧|
-| laptop lid button |❔|
+| Working?      |     |
+| ------------- |:---:|
+| Audio         | ❌   |
+| Touchscreen   | ❌   |
+| Mouse         | 🚧  |
+| GRUB portrait | 🚧  |
+| Laptop lid    | ❔   |
 
 ## Stuck in portrait mode? 
 `xrandr -o right` 
