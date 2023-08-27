@@ -23,6 +23,7 @@ The mouse buttons are actually KEYBOARD KEYS. They will have to be macro'd:
 You can use either `input-remapper` or `xdotool`. 
 
 The keycode for `KP_Begin` is `84` and `xmodmap` key `0xFF9D`.
+
 The keycode for `MENU` is  `117` and `xmodmap` key `0xFF67`.
 
 The mouse nib itself is an `HTIX5288` which is known to have problems as of kernel 5.4.
