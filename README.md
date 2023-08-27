@@ -3,13 +3,13 @@ This is a collection of files / scripts for helping users with their generic 7 i
 
 ## Issues
 
-| Working?      |     |
-| ------------- |:---:|
-| Audio         | ❌   |
-| Touchscreen   | ❌   |
-| Mouse         | 🚧  |
-| GRUB portrait | 🚧  |
-| Laptop lid    | ❔   |
+| Working?      |     | Notes                                                    |
+| ------------- |:---:| --------------------------------------------------------:|
+| Audio         | ❌   |                                                          |
+| Touchscreen   | ❌   | Not even detected                                        |
+| Mouse         | 🚧  | Still not satisfied with the remapping                   |
+| GRUB portrait | 🚧  | GRUB option `fbcon` ignored for menu but the rest is not |
+| Laptop lid    | ❔   | Seems to work but locks up with `i3lock`                 |
 
 ## Stuck in portrait mode? 
 `xrandr -o right` 
