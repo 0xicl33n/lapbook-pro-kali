@@ -5,7 +5,7 @@ This is a collection of files / scripts for helping users with their generic 7 i
 
 | Working?      |     | Notes                                                    |
 | ------------- |:---:| --------------------------------------------------------:|
-| Audio         | ✅   |                                                          |
+| Audio         | ✅   | snd_soc_sof_es8336 quirk=0x02 must be added to modprobe.d |
 | Touchscreen   | ❌   | Not even detected                                        |
 | Mouse         | 🚧  | Still not satisfied with the remapping                   |
 | GRUB portrait | 🚧  | GRUB option `fbcon` ignored for menu but the rest is not |
