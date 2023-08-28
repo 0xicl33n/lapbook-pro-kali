@@ -1,12 +1,23 @@
 # lapbook-pro-kali
-This is a collection of files / scripts for helping users with their generic 7 inch mini laptop from some obscure chinese company.
+This is a collection of files / scripts for helping users with their generic 7 inch mini laptop from some obscure chinese company. 
+
+In theory, this should work just fine for debian and ubuntu or any other *nix distribution.
+
+Specs:
+- CPU: Intel(R) Celeron(R) J4105 CPU @ 1.50GHz Gemini Lake
+- Memory: ABCD 12GB @ 2133 Hhz LPDDR4
+- HDD: ShiJi 512GB
+- MB: Default string Default string 2.1. To Be Filled By O.E.M.
+- WIFI: Intel Corporation Wireless 3165 (rev 81)
+- GPU: Intel Corporation GeminiLake [UHD Graphics 600] (rev 03)
+- CAM: Sunplus Innovation Technology Inc. SPCA2281 Web Camera
 
 ## Issues
 
 | Working?      |     | Notes                                                    |
 | ------------- |:---:| --------------------------------------------------------:|
-| Audio         | ✅   | snd_soc_sof_es8336 quirk=0x02 must be added to modprobe.d |
-| Touchscreen   | ❌   | Not even detected                                        |
+| Audio         | ✅   | `snd_soc_sof_es8336 quirk=0x02` must be added in modprobe.d |
+| Touchscreen   | 🚧   | probe of i2c-GDIX1002:00 failed with error -5         |
 | Mouse         | 🚧  | Still not satisfied with the remapping                   |
 | GRUB portrait | 🚧  | GRUB option `fbcon` ignored for menu but the rest is not |
 | Laptop lid    | ❔   | Seems to work but locks up with `i3lock`                 |
@@ -38,3 +49,16 @@ At the time of this writing it is kernel 3.6.0 with an attempt at better framebu
 - Reboot
 - Run `alsamixer -c 0`
 - Mess with the sliders until you hear audio. Mostly the `Speakers` slider
+
+# Touchscreen
+Identified as Goodix Capacitive TouchScreen GDIX1002. 
+
+```sh
+[   11.640471] Goodix-TS i2c-GDIX1002:00: supply AVDD28 not found, using dummy regulator
+[   11.640560] Goodix-TS i2c-GDIX1002:00: supply VDDIO not found, using dummy regulator
+[   11.640644] Goodix-TS i2c-GDIX1002:00: Unexpected ACPI resources: gpio_count 1, gpio_int_idx 0
+[   11.841245] Goodix-TS i2c-GDIX1002:00: ID 911, version: 1060
+[   11.930999] input: Goodix Capacitive TouchScreen as /devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-5/i2c-GDIX1002:00/input/input8
+[   11.944029] Goodix-TS i2c-GDIX1002:00: request IRQ failed: -5
+[   12.106752] Goodix-TS: probe of i2c-GDIX1002:00 failed with error -5
+```
